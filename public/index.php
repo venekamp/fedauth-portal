@@ -1,8 +1,9 @@
 <?php
+
 $FEDAUTH_ROOT =
     isset($_SERVER['FEDAUTH_ROOT'])
         ? $_SERVER[['FEDAUTH_ROOT']
-        : '../fedauth-php';
+        : '../../fedauth-portal/fedauth-php';
 
 if (chdir($FEDAUTH_ROOT) === FALSE) {
         echo(
@@ -14,3 +15,5 @@ if (chdir($FEDAUTH_ROOT) === FALSE) {
 } else {
     include('index.php');
 }
+
+?>
