@@ -2,7 +2,7 @@
 
 $FEDAUTH_ROOT =
     isset($_SERVER['FEDAUTH_ROOT'])
-        ? $_SERVER[['FEDAUTH_ROOT']
+        ? $_SERVER['FEDAUTH_ROOT']
         : '../../fedauth-portal/fedauth-php';
 
 if (chdir($FEDAUTH_ROOT) === FALSE) {
